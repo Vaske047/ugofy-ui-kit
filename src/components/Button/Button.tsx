@@ -1,7 +1,14 @@
 import React from 'react'
-import { ComponentProps } from './types'
+import type { ComponentProps } from './types'
 
-const Button = ({ label, onClick, type }: ComponentProps) => {
+const Button = ({
+  label,
+  onClick,
+  type,
+  primary,
+  size,
+  backgroundColor
+}: ComponentProps) => {
   const handleClick = () => {
     onClick()
   }
