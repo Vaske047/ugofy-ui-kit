@@ -10,11 +10,8 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions'
   ],
   framework: {
-    name: '@storybook/react',
+    name: '@storybook/react-vite',
     options: {}
-  },
-  core: {
-    builder: 'storybook-builder-vite'
   }
 }
 export default config
