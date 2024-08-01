@@ -15,6 +15,9 @@ const Button = ({
   return (
     <div className={type} onClick={handleClick}>
       {label}
+      {primary}
+      {size}
+      {backgroundColor}
     </div>
   )
 }
