@@ -5,9 +5,9 @@
   "author": "Aleksandar Vasic",
   "license": "MIT",
   "repository": "Aleksandar Vasic/ugofy-ui-kit",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "source": "src/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "engines": {
     "node": ">=10"
