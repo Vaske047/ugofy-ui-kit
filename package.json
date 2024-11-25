@@ -85,7 +85,8 @@
   "dependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "styled-components": "^6.1.13"
   },
   "eslintConfig": {
     "extends": [

@@ -1,8 +1,5 @@
-export interface ComponentProps {
+export interface ButtonProps {
   label?: string
   onClick?: any
-  type?: string
-  primary?: boolean
-  size?: string
-  backgroundColor?: string
+  variant?: string
 }
