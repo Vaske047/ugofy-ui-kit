@@ -1,24 +1,15 @@
 import React from 'react'
-import type { ComponentProps } from './types'
+import type { ButtonProps } from './types'
+import { StyledButton } from './style'
 
-const Button = ({
-  label,
-  onClick,
-  type,
-  primary,
-  size,
-  backgroundColor
-}: ComponentProps) => {
+const Button = ({ label, onClick, variant }: ButtonProps) => {
   const handleClick = () => {
     onClick()
   }
   return (
-    <div className={type} onClick={handleClick}>
+    <StyledButton variant={variant} onClick={handleClick}>
       {label}
-      {primary}
-      {size}
-      {backgroundColor}
-    </div>
+    </StyledButton>
   )
 }
 

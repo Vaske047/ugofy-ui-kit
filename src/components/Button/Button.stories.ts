@@ -3,7 +3,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Button from './Button'
 
 const meta: Meta<typeof Button> = {
-  component: Button
+  component: Button,
+  argTypes: {
+    onClick: { action: 'clicked' }
+  }
 }
 
 export default meta
@@ -11,14 +14,14 @@ type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button'
+    variant: 'primary',
+    label: 'Primary Button'
   }
 }
 
 export const Secondary: Story = {
   args: {
-    ...Primary.args,
-    primary: false
+    variant: 'secondary',
+    label: 'Secondary Button'
   }
 }
