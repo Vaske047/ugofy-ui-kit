@@ -1,8 +1,2 @@
-import { lazy } from 'react'
-
-export const Button = lazy(
-  () => import(/* webpackChunkName: "Button" */ './Button/Button')
-)
-export const TableList = lazy(
-  () => import(/* webpackChunkName: "Input" */ './TableList/TableList')
-)
+export { default as Button } from './Button/Button'
+export { default as TableList } from './TableList/TableList'
