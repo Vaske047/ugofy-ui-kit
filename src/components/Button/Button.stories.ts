@@ -5,7 +5,7 @@ import Button from './Button'
 const meta: Meta<typeof Button> = {
   component: Button,
   argTypes: {
-    onClick: { action: 'clicked' }
+    handleClick: { action: 'clicked' }
   }
 }
 

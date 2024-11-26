@@ -1,5 +1,5 @@
 export interface ButtonProps {
   label?: string
-  onClick?: any
+  handleClick?: () => void
   variant?: string
 }
