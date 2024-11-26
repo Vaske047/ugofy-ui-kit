@@ -17,13 +17,17 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
     "ignoreDeprecations": "5.0",
-    "resolveJsonModule": true, // Add this if you deal with JSON imports
-    "baseUrl": ".", // Add this to enable relative imports
-    "paths": {
-      // Add this if you have custom paths
-      "@components/*": ["src/components/*"]
-    }
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": ["src/**/*", "rollup.config.ts"],
-  "exclude": ["node_modules", "dist", "example"]
+  "exclude": ["node_modules", "dist", "example"],
+  "types": ["node", "jest", "@testing-library/jest-dom"]
 }
