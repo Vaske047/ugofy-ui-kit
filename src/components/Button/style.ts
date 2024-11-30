@@ -3,11 +3,12 @@ import { ButtonProps } from './types'
 
 export const StyledButton = styled.button<ButtonProps>`
   display: flex;
-  background-color: #0f2a3c;
-  color: #fff;
-  padding: 15px 25px;
+  background-color: ${({ theme }) => theme?.COLORS?.primaryButton?.background};
+  color: ${({ theme }) => theme?.COLORS?.primaryButton?.color};
+  font-size: ${({ theme }) => theme?.TYPO?.button?.primary};
+  padding: ${({ theme }) => theme?.SIZE?.padding?.primaryButton};
   font-size: 14px;
-  border-radius: 6px;
+  border-radius: ${({ theme }) => theme?.SIZE?.borderRadius?.primaryButton};
   border: none;
   cursor: pointer;
   ${({ variant }) =>
