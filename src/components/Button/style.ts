@@ -5,7 +5,6 @@ export const StyledButton = styled.button<ButtonProps>`
   display: flex;
   background-color: ${({ theme }) => theme?.COLORS?.primaryButton?.background};
   color: ${({ theme }) => theme?.COLORS?.primaryButton?.color};
-  font-size: ${({ theme }) => theme?.TYPO?.button?.primary};
   padding: ${({ theme }) => theme?.SIZE?.padding?.primaryButton};
   font-size: ${({ theme }) => theme?.TYPO?.size?.text14};
   border-radius: ${({ theme }) => theme?.SIZE?.borderRadius?.primaryButton};
