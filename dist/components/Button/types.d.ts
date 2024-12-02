@@ -7,4 +7,5 @@ export interface ButtonProps {
     icon?: React.ReactNode;
     outlined?: boolean;
     transparent?: boolean;
+    $size?: 'large' | 'small';
 }

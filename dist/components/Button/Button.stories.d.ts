@@ -8,3 +8,4 @@ export declare const Disabled: Story;
 export declare const Outlined: Story;
 export declare const Secondary: Story;
 export declare const IconButton: Story;
+export declare const SmallButton: Story;
