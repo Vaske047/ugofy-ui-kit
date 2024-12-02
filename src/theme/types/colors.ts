@@ -5,4 +5,5 @@ export type ButtonType = {
 
 export type ColorsType = {
   primaryButton?: ButtonType
+  secondaryButton?: ButtonType
 }

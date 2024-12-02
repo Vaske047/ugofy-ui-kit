@@ -1,20 +1,36 @@
+import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-
 import Button from './Button'
 
-const meta: Meta = {
-  title: 'Components/Button',
-  component: Button
+const meta: Meta<typeof Button> = {
+  title: 'Components/Button', // Always include a title
+  component: Button,
+  decorators: [
+    (Story) => (
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: 'calc(100vh - 30px)'
+        }}
+      >
+        <Story />
+      </div>
+    )
+  ]
 }
 
 export default meta
+
 type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
     variant: 'primary',
     label: 'Primary Button',
-    disabled: false
+    disabled: false,
+    handleClick: () => console.log('test')
   }
 }
 

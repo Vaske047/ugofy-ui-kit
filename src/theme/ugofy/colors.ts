@@ -9,6 +9,10 @@ const COLORS: ColorsType = {
   primaryButton: {
     background: palette.navyBlue,
     color: palette.white
+  },
+  secondaryButton: {
+    background: palette.white,
+    color: palette.navyBlue
   }
 }
 export default COLORS

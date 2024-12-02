@@ -7,15 +7,16 @@ export const StyledButton = styled.button<ButtonProps>`
   color: ${({ theme }) => theme?.COLORS?.primaryButton?.color};
   font-size: ${({ theme }) => theme?.TYPO?.button?.primary};
   padding: ${({ theme }) => theme?.SIZE?.padding?.primaryButton};
-  font-size: 14px;
+  font-size: ${({ theme }) => theme?.TYPO?.size?.text14};
   border-radius: ${({ theme }) => theme?.SIZE?.borderRadius?.primaryButton};
   border: none;
   cursor: pointer;
   ${({ variant }) =>
     variant === 'secondary' &&
     css`
-      background-color: #fff;
-      color: #0f2a3c;
+      background-color: ${({ theme }) =>
+        theme?.COLORS?.secondaryButton?.background};
+      color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
     `};
   ${({ disabled }) =>
     disabled &&
