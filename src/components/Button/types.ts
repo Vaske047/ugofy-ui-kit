@@ -5,4 +5,5 @@ export interface ButtonProps {
   disabled?: boolean
   icon?: React.ReactNode
   outlined?: boolean
+  transparent?: boolean
 }
