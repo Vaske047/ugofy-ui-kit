@@ -27,6 +27,6 @@ export const StyledButton = styled.button<ButtonProps>`
   ${({ outlined }) =>
     outlined &&
     css`
-      border: 1px solid #e1e1e1;
+      border: 1px solid ${({ theme }) => theme?.COLORS?.secondaryButton?.border};
     `};
 `

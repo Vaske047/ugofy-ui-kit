@@ -1,6 +1,7 @@
 export type ButtonType = {
   color: string
   background: string
+  border?: string
 }
 
 export type ColorsType = {
