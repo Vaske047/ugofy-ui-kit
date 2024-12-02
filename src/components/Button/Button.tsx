@@ -8,6 +8,7 @@ const Button = ({
   handleClick,
   variant,
   disabled,
+  transparent,
   outlined
 }: ButtonProps) => {
   return (
@@ -16,6 +17,7 @@ const Button = ({
       disabled={disabled}
       outlined={outlined}
       onClick={handleClick}
+      transparent={transparent}
     >
       {icon}
       {label}

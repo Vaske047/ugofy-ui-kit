@@ -1,5 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
+import theme from '../../theme'
 import Button from './Button'
 
 const meta: Meta<typeof Button> = {
@@ -55,5 +56,12 @@ export const Secondary: Story = {
   args: {
     variant: 'secondary',
     label: 'Secondary Button'
+  }
+}
+
+export const IconButton: Story = {
+  args: {
+    variant: 'icon',
+    icon: theme.getOptions.ICONS.edit
   }
 }

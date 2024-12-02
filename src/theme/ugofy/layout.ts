@@ -5,7 +5,8 @@ const SIZE: SizeTypes = {
     primaryButton: '6px'
   },
   padding: {
-    primaryButton: '15px 25px'
+    primaryButton: '15px 25px',
+    iconButton: '7px'
   }
 }
 

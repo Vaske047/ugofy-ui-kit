@@ -18,15 +18,27 @@ export const StyledButton = styled.button<ButtonProps>`
         theme?.COLORS?.secondaryButton?.background};
       color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
     `};
+  ${({ variant }) =>
+    variant === 'icon' &&
+    css`
+      background-color: ${({ theme }) => theme?.COLORS?.iconButton?.background};
+      color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
+      padding: ${({ theme }) => theme?.SIZE?.padding?.iconButton};
+    `};
   ${({ disabled }) =>
     disabled &&
     css`
-      opacity: 0.7;
+      opacity: ${({ theme }) => theme?.SHADOW?.opacity?.high};
       cursor: not-allowed;
     `};
   ${({ outlined }) =>
     outlined &&
     css`
       border: 1px solid ${({ theme }) => theme?.COLORS?.secondaryButton?.border};
+    `};
+  ${({ transparent }) =>
+    transparent &&
+    css`
+      background: transparent;
     `};
 `
