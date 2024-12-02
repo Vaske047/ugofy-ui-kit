@@ -1,7 +1,7 @@
 export interface ButtonProps {
   label?: string
   handleClick?: () => void
-  variant?: string
+  $variant?: 'primary' | 'secondary' | 'icon'
   disabled?: boolean
   icon?: React.ReactNode
   outlined?: boolean

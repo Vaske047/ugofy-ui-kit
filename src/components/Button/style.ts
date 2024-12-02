@@ -10,15 +10,15 @@ export const StyledButton = styled.button<ButtonProps>`
   border-radius: ${({ theme }) => theme?.SIZE?.borderRadius?.primaryButton};
   border: none;
   cursor: pointer;
-  ${({ variant }) =>
-    variant === 'secondary' &&
+  ${({ $variant }) =>
+    $variant === 'secondary' &&
     css`
       background-color: ${({ theme }) =>
         theme?.COLORS?.secondaryButton?.background};
       color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
     `};
-  ${({ variant }) =>
-    variant === 'icon' &&
+  ${({ $variant }) =>
+    $variant === 'icon' &&
     css`
       background-color: ${({ theme }) => theme?.COLORS?.iconButton?.background};
       color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};

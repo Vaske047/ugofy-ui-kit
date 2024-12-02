@@ -6,14 +6,14 @@ const Button = ({
   icon,
   label,
   handleClick,
-  variant,
+  $variant,
   disabled,
   transparent,
   outlined
 }: ButtonProps) => {
   return (
     <StyledButton
-      variant={variant}
+      $variant={$variant}
       disabled={disabled}
       outlined={outlined}
       onClick={handleClick}
