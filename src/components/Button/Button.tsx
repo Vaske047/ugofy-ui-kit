@@ -7,6 +7,7 @@ const Button = ({
   label,
   handleClick,
   $variant,
+  $size,
   disabled,
   transparent,
   outlined
@@ -14,6 +15,7 @@ const Button = ({
   return (
     <StyledButton
       $variant={$variant}
+      $size={$size}
       disabled={disabled}
       outlined={outlined}
       onClick={handleClick}

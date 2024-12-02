@@ -5,5 +5,6 @@ export type SizeTypes = {
   padding: {
     primaryButton: string
     iconButton: string
+    smallButton: string
   }
 }

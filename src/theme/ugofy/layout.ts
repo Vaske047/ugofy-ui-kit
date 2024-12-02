@@ -6,7 +6,8 @@ const SIZE: SizeTypes = {
   },
   padding: {
     primaryButton: '15px 25px',
-    iconButton: '7px'
+    iconButton: '7px',
+    smallButton: '10px'
   }
 }
 

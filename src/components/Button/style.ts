@@ -40,4 +40,9 @@ export const StyledButton = styled.button<ButtonProps>`
     css`
       background: transparent;
     `};
+  ${({ $size }) =>
+    $size === 'small' &&
+    css`
+      padding: ${({ theme }) => theme?.SIZE?.padding?.smallButton};
+    `};
 `

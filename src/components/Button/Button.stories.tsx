@@ -65,3 +65,11 @@ export const IconButton: Story = {
     icon: theme.getOptions.ICONS.edit
   }
 }
+
+export const SmallButton: Story = {
+  args: {
+    $variant: 'primary',
+    label: 'Small Button',
+    $size: 'small'
+  }
+}
