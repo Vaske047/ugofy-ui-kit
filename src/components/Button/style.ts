@@ -3,6 +3,9 @@ import { ButtonProps } from './types'
 
 export const StyledButton = styled.button<ButtonProps>`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   background-color: ${({ theme }) => theme?.COLORS?.primaryButton?.background};
   color: ${({ theme }) => theme?.COLORS?.primaryButton?.color};
   padding: ${({ theme }) => theme?.SIZE?.padding?.primaryButton};
