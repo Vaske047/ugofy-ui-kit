@@ -1,6 +1,10 @@
+/// <reference types="react" />
 export interface ButtonProps {
     label?: string;
     handleClick?: () => void;
     variant?: string;
-    disabled: boolean;
+    disabled?: boolean;
+    icon?: React.ReactNode;
+    outlined?: boolean;
+    transparent?: boolean;
 }
