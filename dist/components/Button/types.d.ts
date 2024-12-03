@@ -1,4 +1,5 @@
 /// <reference types="react" />
+import { Styles } from 'styled-components/dist/types';
 export interface ButtonProps {
     label?: string;
     handleClick?: () => void;
@@ -8,5 +9,5 @@ export interface ButtonProps {
     outlined?: boolean;
     transparent?: boolean;
     $size?: 'large' | 'small';
-    cssProps?: any;
+    cssProps?: Styles<object>;
 }
