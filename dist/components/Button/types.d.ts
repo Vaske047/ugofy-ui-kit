@@ -8,4 +8,5 @@ export interface ButtonProps {
     outlined?: boolean;
     transparent?: boolean;
     $size?: 'large' | 'small';
+    cssProps?: any;
 }
