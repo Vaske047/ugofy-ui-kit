@@ -25,9 +25,9 @@ const Button = ({
       cssProps={cssProps}
       iconPossition={iconPossition}
     >
-      {icon && iconPossition === 'left' && icon}
+      {iconPossition === 'left' && icon}
       {label}
-      {icon && iconPossition === 'right' && icon}
+      {iconPossition === 'right' && icon}
     </StyledButton>
   )
 }
