@@ -4,7 +4,7 @@ import { StyledButton } from './style'
 
 const Button = ({
   icon,
-  iconPossition = 'left',
+  iconPosition = 'left',
   label,
   handleClick,
   $variant,
@@ -23,11 +23,11 @@ const Button = ({
       onClick={handleClick}
       transparent={transparent}
       cssProps={cssProps}
-      iconPossition={iconPossition}
+      iconPosition={iconPosition}
     >
-      {iconPossition === 'left' && icon}
+      {iconPosition === 'left' ? icon : ''}
       {label}
-      {iconPossition === 'right' && icon}
+      {iconPosition === 'right' ? icon : ''}
     </StyledButton>
   )
 }

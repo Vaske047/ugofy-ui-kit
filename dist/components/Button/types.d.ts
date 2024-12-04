@@ -6,7 +6,7 @@ export interface ButtonProps {
     $variant?: 'primary' | 'secondary' | 'icon';
     disabled?: boolean;
     icon?: React.ReactNode;
-    iconPossition?: 'left' | 'right';
+    iconPosition?: 'left' | 'right';
     outlined?: boolean;
     transparent?: boolean;
     $size?: 'large' | 'small';
