@@ -4,13 +4,15 @@ import { StyledButton } from './style'
 
 const Button = ({
   icon,
+  iconPosition = 'left',
   label,
   handleClick,
   $variant,
   $size,
   disabled,
   transparent,
-  outlined
+  outlined,
+  cssProps
 }: ButtonProps) => {
   return (
     <StyledButton
@@ -20,9 +22,12 @@ const Button = ({
       outlined={outlined}
       onClick={handleClick}
       transparent={transparent}
+      cssProps={cssProps}
+      iconPosition={iconPosition}
     >
-      {icon}
+      {iconPosition === 'left' ? icon : ''}
       {label}
+      {iconPosition === 'right' ? icon : ''}
     </StyledButton>
   )
 }
