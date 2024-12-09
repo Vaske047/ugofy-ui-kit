@@ -41,9 +41,9 @@ export const Disabled: Story = {
     label: 'Disabled Button',
     disabled: true,
 
-    cssProps: {},
+    $cssProps: {},
 
-    $size: "large"
+    $size: 'large'
   }
 }
 
@@ -65,7 +65,7 @@ export const Secondary: Story = {
 
 export const IconButton: Story = {
   args: {
-    $variant: "icon",
+    $variant: 'icon',
     icon: theme.getOptions.ICONS.edit
   }
 }

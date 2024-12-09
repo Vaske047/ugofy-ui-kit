@@ -10,5 +10,5 @@ export interface ButtonProps {
   outlined?: boolean
   transparent?: boolean
   $size?: 'large' | 'small'
-  cssProps?: Styles<object>
+  $cssProps?: Styles<object>
 }

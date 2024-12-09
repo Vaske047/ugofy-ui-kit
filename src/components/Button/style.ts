@@ -48,9 +48,9 @@ export const StyledButton = styled.button<ButtonProps>`
     css`
       padding: ${({ theme }) => theme?.SIZE?.padding?.smallButton};
     `};
-  ${({ cssProps }) =>
-    cssProps &&
+  ${({ $cssProps }) =>
+    $cssProps &&
     css`
-      ${cssProps}
+      ${$cssProps}
     `}
 `

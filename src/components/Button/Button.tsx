@@ -12,7 +12,7 @@ const Button = ({
   disabled,
   transparent,
   outlined,
-  cssProps
+  $cssProps
 }: ButtonProps) => {
   return (
     <StyledButton
@@ -22,7 +22,7 @@ const Button = ({
       outlined={outlined}
       onClick={handleClick}
       transparent={transparent}
-      cssProps={cssProps}
+      $cssProps={$cssProps}
       iconPosition={iconPosition}
     >
       {iconPosition === 'left' ? icon : ''}
