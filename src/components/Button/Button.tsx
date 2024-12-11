@@ -3,33 +3,33 @@ import type { ButtonProps } from './types'
 import { StyledButton } from './style'
 
 const Button = ({
-  icon,
-  iconPosition = 'left',
+  $icon,
+  $iconPosition = 'left',
   label,
   handleClick,
-  variant,
-  size,
+  $variant,
+  $size,
   disabled,
-  transparent,
-  outlined,
-  cssProps,
+  $transparent,
+  $outlined,
+  $cssProps,
   ...props
 }: ButtonProps) => {
   return (
     <StyledButton
-      variant={variant}
-      size={size}
+      $variant={$variant}
+      $size={$size}
       disabled={disabled}
-      outlined={outlined}
+      $outlined={$outlined}
       onClick={handleClick}
-      transparent={transparent}
-      iconPosition={iconPosition}
-      cssProps={cssProps}
+      $transparent={$transparent}
+      $cssProps={$cssProps}
+      $iconPosition={$iconPosition}
       {...props}
     >
-      {iconPosition === 'left' ? icon : ''}
+      {$iconPosition === 'left' ? $icon : ''}
       {label}
-      {iconPosition === 'right' ? icon : ''}
+      {$iconPosition === 'right' ? $icon : ''}
     </StyledButton>
   )
 }

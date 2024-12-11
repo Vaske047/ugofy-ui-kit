@@ -13,15 +13,15 @@ export const StyledButton = styled.button<ButtonProps>`
   border-radius: ${({ theme }) => theme?.SIZE?.borderRadius?.primaryButton};
   border: none;
   cursor: pointer;
-  ${({ variant }) =>
-    variant === 'secondary' &&
+  ${({ $variant }) =>
+    $variant === 'secondary' &&
     css`
       background-color: ${({ theme }) =>
         theme?.COLORS?.secondaryButton?.background};
       color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
     `};
-  ${({ variant }) =>
-    variant === 'icon' &&
+  ${({ $variant }) =>
+    $variant === 'icon' &&
     css`
       background-color: ${({ theme }) => theme?.COLORS?.iconButton?.background};
       color: ${({ theme }) => theme?.COLORS?.secondaryButton?.color};
@@ -33,24 +33,24 @@ export const StyledButton = styled.button<ButtonProps>`
       opacity: ${({ theme }) => theme?.SHADOW?.opacity?.high};
       cursor: not-allowed;
     `};
-  ${({ outlined }) =>
-    outlined &&
+  ${({ $outlined }) =>
+    $outlined &&
     css`
       border: 1px solid ${({ theme }) => theme?.COLORS?.secondaryButton?.border};
     `};
-  ${({ transparent }) =>
-    transparent &&
+  ${({ $transparent }) =>
+    $transparent &&
     css`
       background: transparent;
     `};
-  ${({ size }) =>
-    size === 'small' &&
+  ${({ $size }) =>
+    $size === 'small' &&
     css`
       padding: ${({ theme }) => theme?.SIZE?.padding?.smallButton};
     `};
-  ${({ cssProps }) =>
-    cssProps &&
+  ${({ $cssProps }) =>
+    $cssProps &&
     css`
-      ${cssProps}
+      ${$cssProps}
     `}
 `

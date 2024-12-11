@@ -8,7 +8,7 @@ describe('Button Component', () => {
   const defaultProps: ButtonProps = {
     label: 'Click Me',
     handleClick: jest.fn(),
-    variant: 'primary',
+    $variant: 'primary',
     disabled: false
   }
 
