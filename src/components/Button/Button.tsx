@@ -7,23 +7,25 @@ const Button = ({
   iconPosition = 'left',
   label,
   handleClick,
-  $variant,
-  $size,
+  variant,
+  size,
   disabled,
   transparent,
   outlined,
-  $cssProps
+  cssProps,
+  ...props
 }: ButtonProps) => {
   return (
     <StyledButton
-      $variant={$variant}
-      $size={$size}
+      variant={variant}
+      size={size}
       disabled={disabled}
       outlined={outlined}
       onClick={handleClick}
       transparent={transparent}
-      $cssProps={$cssProps}
       iconPosition={iconPosition}
+      cssProps={cssProps}
+      {...props}
     >
       {iconPosition === 'left' ? icon : ''}
       {label}

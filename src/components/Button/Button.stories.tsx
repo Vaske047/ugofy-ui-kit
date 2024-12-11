@@ -28,7 +28,7 @@ type Story = StoryObj<typeof Button>
 
 export const Primary: Story = {
   args: {
-    $variant: 'primary',
+    variant: 'primary',
     label: 'Primary Button',
     disabled: false,
     handleClick: () => console.log('test')
@@ -37,19 +37,17 @@ export const Primary: Story = {
 
 export const Disabled: Story = {
   args: {
-    $variant: 'primary',
+    variant: 'primary',
     label: 'Disabled Button',
     disabled: true,
-
-    $cssProps: {},
-
-    $size: 'large'
+    cssProps: {},
+    size: 'large'
   }
 }
 
 export const Outlined: Story = {
   args: {
-    $variant: 'secondary',
+    variant: 'secondary',
     label: 'Outlined Button',
     disabled: false,
     outlined: true
@@ -58,22 +56,22 @@ export const Outlined: Story = {
 
 export const Secondary: Story = {
   args: {
-    $variant: 'secondary',
+    variant: 'secondary',
     label: 'Secondary Button'
   }
 }
 
 export const IconButton: Story = {
   args: {
-    $variant: 'icon',
+    variant: 'icon',
     icon: theme.getOptions.ICONS.edit
   }
 }
 
 export const SmallButton: Story = {
   args: {
-    $variant: 'primary',
+    variant: 'primary',
     label: 'Small Button',
-    $size: 'small'
+    size: 'small'
   }
 }
